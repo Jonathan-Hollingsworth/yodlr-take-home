@@ -16,9 +16,7 @@ function Admin() {
             <section key={user.id}>
               <h2>{user.firstName} {user.lastName}</h2>
               <h3>{user.email}</h3>
-              <ul>
-                <li>Current Status: {user.state}</li>
-              </ul>
+              <h4>Current Status: {user.state}</h4>
             </section>
           ))}
         </div>
