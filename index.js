@@ -38,9 +38,9 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.set('port', process.env.PORT || 3000);
+const PORT = +process.env.PORT || 3001;
 
-var server = app.listen(app.get('port'), function() {
+var server = app.listen(PORT, function() {
   log.info(
     'Express server listening on http://localhost:%d',
     server.address().port
